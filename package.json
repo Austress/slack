@@ -8,7 +8,9 @@
     "posttest": "npm run lint",
     "lint": "eslint lib test",
     "dev": "nodemon --exec npm start",
-    "migrate": "sequelize db:migrate"
+    "migrate": "sequelize db:migrate",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@keyv/redis": "github:integrations/keyv-redis#use-keys",
@@ -36,7 +38,8 @@
     "request": "^2.87.0",
     "sequelize": "^4.33.4",
     "sequelize-cli": "^4.0.0",
-    "sequelize-encrypted": "^1.0.0"
+    "sequelize-encrypted": "^1.0.0",
+    "snyk": "^1.231.0"
   },
   "devDependencies": {
     "eslint": "^4.14.0",
@@ -74,5 +77,6 @@
       "AbstractIssue",
       "Message"
     ]
-  }
+  },
+  "snyk": true
 }
