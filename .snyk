@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - sequelize > lodash:
+        patched: '2020-05-05T00:15:46.865Z'
+    - newrelic > async > lodash:
+        patched: '2020-05-05T00:15:46.865Z'
+    - probot > @octokit/rest > lodash:
+        patched: '2020-05-05T00:15:46.865Z'
+    - sequelize-cli > umzug > lodash:
+        patched: '2020-05-05T00:15:46.865Z'
+    - html-to-mrkdwn > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2020-05-05T00:15:46.865Z'
+    - html-to-mrkdwn > turndown > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2020-05-05T00:15:46.865Z'
+    - sequelize-cli > lodash:
+        patched: '2020-05-05T00:15:46.865Z'
